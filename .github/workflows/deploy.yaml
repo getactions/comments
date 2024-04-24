@@ -27,7 +27,7 @@ jobs:
           GITHUB_PRIVATE_KEY="${{ secrets.GH_PRIVATE_KEY }}"
           ENCRYPTION_PASSWORD=${{ secrets.ENCRYPTION_PASSWORD }}
           ORIGINS=["${{ secrets.BASE_URL }}"]
-          ORIGINS_REGEX=["http://localhost:5173"]
+          ORIGINS_REGEX=["http://localhost:[0-9]+"]
           EOF
 
       - name: Fly!

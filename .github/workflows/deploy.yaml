@@ -37,3 +37,6 @@ jobs:
             --no-cache \
             --app ${{ secrets.FLY_APP_NAME }} \
             --access-token ${{ secrets.FLY_API_TOKEN }}
+
+      - name: Cleanup
+        run: rm .env.local

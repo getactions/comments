@@ -40,7 +40,6 @@ const securityHeaders = [
   {
     key: 'Content-Security-Policy',
     value: `frame-ancestors 'self' https://getactions.dev https://*.getactions.dev;`,
-    
   },
 ];
 

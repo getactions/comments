@@ -4,7 +4,9 @@ export const env = {
   client_secret: process.env.GITHUB_CLIENT_SECRET,
   installation_id: process.env.GITHUB_INSTALLATION_ID,
   token: process.env.GITHUB_TOKEN,
-  private_key: process.env.GITHUB_PRIVATE_KEY ? Buffer.from(process.env.GITHUB_PRIVATE_KEY, 'base64').toString() : undefined,
+  private_key: process.env.GITHUB_PRIVATE_KEY
+    ? Buffer.from(process.env.GITHUB_PRIVATE_KEY, 'base64').toString()
+    : undefined,
   encryption_password: process.env.ENCRYPTION_PASSWORD,
   app_host: process.env.NEXT_PUBLIC_GISCUS_APP_HOST as `https://${string}`,
   postgrest_url: process.env.POSTGREST_URL,

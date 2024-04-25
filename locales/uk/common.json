@@ -36,7 +36,7 @@
   "loading": "Завантаження",
   "loadingComments": "Завантаження коментарів…",
   "loadingPreview": "Завантаження попереднього перегляду…",
-  "poweredBy": "– powered by <a>giscus</a>",
+  "poweredBy": "",
   "oldest": "Старіші",
   "newest": "Новіші",
   "showPreviousReplies": {

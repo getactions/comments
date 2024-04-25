@@ -31,7 +31,7 @@
   "loading": "불러오는 중",
   "loadingComments": "댓글 불러오는 중…",
   "loadingPreview": "미리보기 불러오는 중…",
-  "poweredBy": "– Powered by <a>giscus</a>",
+  "poweredBy": "",
   "oldest": "오래된 순",
   "newest": "새로운 순",
   "showPreviousReplies": {

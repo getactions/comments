@@ -21,13 +21,6 @@ jobs:
           NEXT_PUBLIC_DEMO_REPO=getactions/comments
           NEXT_PUBLIC_DEMO_REPO_ID=${{ secrets.REPO_ID }}
           NEXT_PUBLIC_DEMO_CATEGORY_ID=${{ secrets.CATEGORY_ID }}
-          GITHUB_APP_ID=${{ secrets.GH_APP_ID }}
-          GITHUB_CLIENT_ID=${{ secrets.GH_CLIENT_ID }}
-          GITHUB_CLIENT_SECRET=${{ secrets.GH_CLIENT_SECRET }}
-          GITHUB_PRIVATE_KEY="${{ secrets.GH_PRIVATE_KEY }}"
-          ENCRYPTION_PASSWORD=${{ secrets.ENCRYPTION_PASSWORD }}
-          ORIGINS=["${{ secrets.BASE_URL }}"]
-          ORIGINS_REGEX=["http://localhost:[0-9]+"]
           EOF
 
       - name: Fly!

@@ -24,12 +24,12 @@ jobs:
       #     restore-keys: |
       #       ${{ runner.os }}-nextjs-${{ hashFiles('**/yarn.lock') }}-
 
-      - uses: actions/cache@v4
-        with:
-          path: .eslintcache
-          key: eslint
-          restore-keys: |
-            eslint
+      # - uses: actions/cache@v4
+      #   with:
+      #     path: .eslintcache
+      #     key: eslint
+      #     restore-keys: |
+      #       eslint
 
       - uses: actions/setup-node@v4
         with:

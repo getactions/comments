@@ -80,12 +80,15 @@ export default function Giscus({ onDiscussionCreateRequest, onError }: IGiscusPr
     (!data.isLoading && !data.isLocked && (!data.error || (data.isNotFound && !number)));
 
   if (data.isLoading) {
-    return (
-      <div className="gsc-loading">
-        <div className="gsc-loading-image" />
-        <span className="gsc-loading-text color-fg-muted">{t('loadingComments')}</span>
-      </div>
-    );
+    // We let the client show a loading indicator (e.g. behind the actual widget)
+
+    return null;
+    // return (
+    //   <div className="gsc-loading">
+    //     <div className="gsc-loading-image" />
+    //     <span className="gsc-loading-text color-fg-muted">{t('loadingComments')}</span>
+    //   </div>
+    // );
   }
 
   return (

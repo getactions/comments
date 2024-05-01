@@ -44,9 +44,6 @@ jobs:
       - name: Build
         run: yarn run build
 
-      - name: Install production dependencies
-        run: yarn install --frozen-lockfile --production=true
-
       - name: Login to ghcr.io
         uses: docker/login-action@v3
         with:

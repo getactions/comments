@@ -13,6 +13,8 @@ WORKDIR /app
 # Copy built application
 COPY --link . .
 
+RUN yarn install --frozen-lockfile --production=true
+
 RUN chown -R node:node /app
 
 USER node

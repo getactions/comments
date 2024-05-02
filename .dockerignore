@@ -33,12 +33,3 @@ yarn-error.log*
 
 # ESLint cache
 .eslintcache
-
-# Compiled client script
-public/client.js
-
-# Compiled themes
-public/themes/
-
-# CSS variables purging script (for development)
-styles/themes/reference.css

@@ -11,7 +11,7 @@ RUN apt update && apt install curl -y
 WORKDIR /app
 
 # Copy built application
-COPY --link . .
+COPY . .
 
 RUN yarn install --frozen-lockfile --production=true
 
